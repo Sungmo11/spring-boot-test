@@ -23,7 +23,8 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor('org.projectlombok:lombok')
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
-        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+//        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine
     }
     compile('org.springframework.boot:spring-boot-starter-data-jpa')    /* jpa 라이브러리추가*/
     compile('com.h2database:h2')                                        /*인메모리 관계형 데이터베이스 라이브러리 추가*/
@@ -31,6 +32,7 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-oauth2-client')   /* 스프링 시큐리티 관련 의존성 추가 */
     compile('org.springframework.session:spring-session-jdbc')          /* 세션을 DB에 저장하기위한 의존성 추가 */
     testImplementation('org.springframework.security:spring-security-test')    /* 시큐리티 테스트를 하기위한 의존성 추가 */
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
 }
 
 test {
