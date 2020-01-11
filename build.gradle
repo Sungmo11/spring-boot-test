@@ -33,6 +33,7 @@ dependencies {
     compile('org.springframework.session:spring-session-jdbc')          /* 세션을 DB에 저장하기위한 의존성 추가 */
     testImplementation('org.springframework.security:spring-security-test')    /* 시큐리티 테스트를 하기위한 의존성 추가 */
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine'
+    compile('org.mariadb.jdbc:mariadb-java-client')                     /* MariaDB 드라이버를 사용하기위한 의존성 추가 */
 }
 
 test {
