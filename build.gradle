@@ -36,11 +36,11 @@ dependencies {
     compile('org.mariadb.jdbc:mariadb-java-client')                     /* MariaDB 드라이버를 사용하기위한 의존성 추가 */
     // 안드로이드와 통신하기위한 의존성추가 start
     // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
-    compile group: 'com.googlecode.json-simple', name: 'json-simple'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
     // https://mvnrepository.com/artifact/org.codehaus.jackson/jackson-mapper-asl
-    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl'
+    compile group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version: '1.9.0'
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
     // 안드로이드와 통신하기위한 의존성추가 stop
 
 }
