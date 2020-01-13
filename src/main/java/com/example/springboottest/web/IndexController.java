@@ -52,5 +52,6 @@ public class IndexController {
 
         return "posts-update";
     }
+
 }
 /* 200110T 1703 test*/

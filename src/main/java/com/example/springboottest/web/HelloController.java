@@ -21,11 +21,6 @@ public class HelloController {
         return new HelloResponseDto(name,amount);
     }
 
-    @GetMapping("/asd/asd/asd/asd")
-    public String asdasd()
-    {
-        return "abc";
-    }
 }
 
 /* 200110T 1703 test*/
