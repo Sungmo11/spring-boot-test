@@ -2,7 +2,6 @@ package com.example.springboottest.web;
 
 import com.example.springboottest.config.auth.LoginUser;
 import com.example.springboottest.config.auth.dto.SessionUser;
-import com.example.springboottest.domain.user.User;
 import com.example.springboottest.service.posts.PostsService;
 import com.example.springboottest.web.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
@@ -10,8 +9,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-
-import javax.servlet.http.HttpSession;
 
 @RequiredArgsConstructor
 @Controller
