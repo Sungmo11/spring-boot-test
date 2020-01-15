@@ -17,7 +17,7 @@ public class AndroidTestController {
     }
 
     @RequestMapping(value = "/jsonTest", method = RequestMethod.POST)
-    public AndroidTestDto jsonTest(@RequestBody AndroidTestDto testDto)
+    public AndroidTestDto jsonTest(AndroidTestDto testDto)
     {
         System.out.println(
                 "JSONTest : "
