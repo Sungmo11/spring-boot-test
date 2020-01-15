@@ -17,13 +17,13 @@ public class AndroidTestController {
     }
 
     @RequestMapping(value = "/jsonTest", method = RequestMethod.POST)
-    public AndroidTestDto jsonTest(AndroidTestDto testDto)
+    public AndroidTestDto jsonTest(String user, String name, String pw)
     {
         System.out.println(
                 "JSONTest : "
-                + "user : " + testDto.getUser()
-                + ", name : " + testDto.getName()
-                + ", pw : " + testDto.getPw()
+                + "user : " + user
+                + ", name : " + name
+                + ", pw : " + pw
         );
 
         AndroidTestDto resultDto = AndroidTestDto.builder().user(-1).name("testnameOk").pw("testpwOk").build();
