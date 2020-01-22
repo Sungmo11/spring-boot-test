@@ -1,6 +1,7 @@
 package com.example.springboottest.androidtest.service;
 
 import com.example.springboottest.androidtest.dto.AndoridLoginTestDto;
+import com.example.springboottest.androidtest.dto.AndroidLoginResponseTestDto;
 import com.example.springboottest.androidtest.dto.AndroidSaveRequestTestDto;
 import com.example.springboottest.androidtest.repository.useraccount.UserAccount;
 import com.example.springboottest.androidtest.repository.useraccount.UserAccountRepository;
@@ -21,7 +22,7 @@ public class AndroidTestServiceImpl implements AndroidTestService {
     }
 
     @Override
-    public Optional<UserAccount> findUser(AndoridLoginTestDto requestDto) {
+    public AndroidLoginResponseTestDto findUser(AndoridLoginTestDto requestDto) {
         return userAccountRepository.findByEmail(requestDto.getEmail());
     }
 

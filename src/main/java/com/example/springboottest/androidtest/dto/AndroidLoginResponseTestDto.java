@@ -1,11 +1,8 @@
 package com.example.springboottest.androidtest.dto;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
-@Getter
+@Getter @Setter
 @NoArgsConstructor
 @ToString
 public class AndroidLoginResponseTestDto {

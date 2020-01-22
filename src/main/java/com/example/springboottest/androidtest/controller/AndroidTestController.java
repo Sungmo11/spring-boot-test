@@ -46,16 +46,14 @@ public class AndroidTestController {
     public AndroidLoginResponseTestDto loginTest(@RequestBody AndoridLoginTestDto andoridLoginTestDto){
 
         System.out.println(
-                "LoginJSONObject : " + andoridLoginTestDto
+                "LoginJSONObject : " + andoridLoginTestDto.toString()
                 + ", findUser : " + androidTestService.findUser(andoridLoginTestDto).toString()
         );
 
-//        androidTestService.findUser(andoridLoginTestDto).toString();
+        AndroidLoginResponseTestDto androidLoginResponseTestDto = androidTestService.findUser(andoridLoginTestDto);
+        androidLoginResponseTestDto.setStatus("SUCCESS");
 
-
-
-
-        return null;
+        return androidLoginResponseTestDto;
     }
 
     // 회원요청을 받는곳
