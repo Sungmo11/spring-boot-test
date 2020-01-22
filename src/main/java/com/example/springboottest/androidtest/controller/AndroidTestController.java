@@ -34,13 +34,15 @@ public class AndroidTestController {
     }
 
     @RequestMapping(value = "/registerTest", method = RequestMethod.POST)
-    public String registerTest(@RequestBody RegisterTestDto registerTestDto)
+    public RegisterTestDto registerTest(@RequestBody RegisterTestDto registerTestDto)
     {
         System.out.println(
                 "JSONObject : " + registerTestDto.toString()
         );
 
-        return "SUCCESS";
+        RegisterTestDto registerTestDto1 = RegisterTestDto.builder().status("SUCCESS").build();
+
+        return registerTestDto1;
     }
 
 
