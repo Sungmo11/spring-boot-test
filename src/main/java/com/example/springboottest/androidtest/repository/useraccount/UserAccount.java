@@ -1,4 +1,4 @@
-package com.example.springboottest.androidtest.repository;
+package com.example.springboottest.androidtest.repository.useraccount;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -7,7 +7,6 @@ import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
