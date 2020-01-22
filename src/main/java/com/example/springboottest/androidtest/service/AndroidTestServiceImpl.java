@@ -24,6 +24,11 @@ public class AndroidTestServiceImpl implements AndroidTestService {
     @Override
     public AndroidLoginResponseTestDto findUser(AndoridLoginTestDto requestDto) {
         UserAccount account = userAccountRepository.findByEmail(requestDto.getEmail());
+
+        if (account == null){
+            return AndroidLoginResponseTestDto.builder().status("fail").build();
+        }
+
         return AndroidLoginResponseTestDto.builder().email(account.getEmail()).password(account.getPassword()).status("SUCCESS").build();
     }
 

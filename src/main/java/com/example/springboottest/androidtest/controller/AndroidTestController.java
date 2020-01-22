@@ -52,13 +52,6 @@ public class AndroidTestController {
 
         AndroidLoginResponseTestDto androidLoginResponseTestDto = androidTestService.findUser(andoridLoginTestDto);
 
-        if (androidLoginResponseTestDto == null){
-            androidLoginResponseTestDto = AndroidLoginResponseTestDto
-                    .builder()
-                    .status("fail")
-                    .build();
-        }
-
         return androidLoginResponseTestDto;
     }
 
