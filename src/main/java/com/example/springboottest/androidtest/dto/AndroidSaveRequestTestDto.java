@@ -11,6 +11,7 @@ public class AndroidSaveRequestTestDto {
 
     private String email;
     private String password;
+    private String status = "true";
 
     @Builder
     public AndroidSaveRequestTestDto(String email, String password){
@@ -23,6 +24,7 @@ public class AndroidSaveRequestTestDto {
                 .builder()
                 .email(email)
                 .password(password)
+                .status(status)
                 .build();
     }
 }

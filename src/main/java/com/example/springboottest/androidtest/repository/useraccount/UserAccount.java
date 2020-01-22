@@ -26,6 +26,7 @@ public class UserAccount {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
     private String status;
 
     @CreatedDate /*Entity가 생성되어 저장될 때 시간이 자동 저장됩니다.*/
