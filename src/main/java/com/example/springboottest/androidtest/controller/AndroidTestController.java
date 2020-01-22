@@ -50,9 +50,7 @@ public class AndroidTestController {
                 + ", findUser : " + androidTestService.findUser(andoridLoginTestDto).toString()
         );
 
-        AndroidLoginResponseTestDto androidLoginResponseTestDto = androidTestService.findUser(andoridLoginTestDto);
-
-        return androidLoginResponseTestDto;
+        return androidTestService.findUser(andoridLoginTestDto);
     }
 
     // 회원요청을 받는곳
