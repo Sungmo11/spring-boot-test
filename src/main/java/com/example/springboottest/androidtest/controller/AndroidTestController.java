@@ -1,5 +1,6 @@
 package com.example.springboottest.androidtest.controller;
 
+import com.example.springboottest.androidtest.dto.AndoridLoginTestDto;
 import com.example.springboottest.androidtest.dto.AndroidSaveRequestTestDto;
 import com.example.springboottest.androidtest.dto.AndroidTestDto;
 import com.example.springboottest.androidtest.dto.RegisterTestDto;
@@ -9,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
@@ -39,6 +42,18 @@ public class AndroidTestController {
         return resultDto;
     }
 
+    // 로그인요청을 받는곳
+    @RequestMapping(value = "/loginTest", method = RequestMethod.POST)
+    public Map<String,String> loginTest(@RequestBody AndoridLoginTestDto andoridLoginTestDto){
+        System.out.println(
+                "LoginJSONObject : " + andoridLoginTestDto
+        );
+
+
+        return null;
+    }
+
+    // 회원요청을 받는곳
     @RequestMapping(value = "/registerTest", method = RequestMethod.POST)
     public RegisterTestDto registerTest(@RequestBody RegisterTestDto registerTestDto)
     {
