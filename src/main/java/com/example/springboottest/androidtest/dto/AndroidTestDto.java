@@ -1,4 +1,4 @@
-package com.example.springboottest.androidtest;
+package com.example.springboottest.androidtest.dto;
 
 import lombok.Builder;
 import lombok.Getter;

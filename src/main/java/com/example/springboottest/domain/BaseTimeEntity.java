@@ -21,4 +21,3 @@ public class BaseTimeEntity {
     private LocalDateTime modifiedDate;
 
 }
-/* 200110T 1703 test*/

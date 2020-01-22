@@ -1,5 +1,7 @@
-package com.example.springboottest.androidtest;
+package com.example.springboottest.androidtest.controller;
 
+import com.example.springboottest.androidtest.dto.AndroidTestDto;
+import com.example.springboottest.androidtest.dto.RegisterTestDto;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,4 +32,16 @@ public class AndroidTestController {
 
         return resultDto;
     }
+
+    @RequestMapping(value = "/registerTest", method = RequestMethod.POST)
+    public String registerTest(@RequestBody RegisterTestDto registerTestDto)
+    {
+        System.out.println(
+                "JSONObject : " + registerTestDto.toString()
+        );
+
+        return "SUCCESS";
+    }
+
+
 }
