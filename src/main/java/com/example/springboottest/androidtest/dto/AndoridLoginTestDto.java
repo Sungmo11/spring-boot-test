@@ -3,9 +3,11 @@ package com.example.springboottest.androidtest.dto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Getter
 @NoArgsConstructor
+@ToString
 public class AndoridLoginTestDto {
 
     private String email;
